@@ -1,0 +1,184 @@
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("./blue-galaxy.jpg");
+  text-align: center;
+  font-family: "Helvetica Neue", arial;
+  font-weight: 100;
+}
+
+/* ==========BACK=========== */
+.btn-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.navigation-main-btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+.navigation-main-btn a {
+  text-decoration: none;
+}
+.navigation-main-btn a:hover {
+  color: rgb(137, 111, 137);
+  text-decoration: underline;
+}
+
+.back-link {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-family: cursive;
+  color: #ffffff;
+  font-size: 18px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 0 0 20px aquamarine, 1px 1px 20px aquamarine,
+    2px 2px 20px aquamarine, -1px -1px 20px aquamarine,
+    -2px -2px 20px aquamarine;
+  animation: textShadow 2500ms infinite alternate;
+}
+
+.back-link::before {
+  content: "←";
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+
+@keyframes textShadow {
+  from {
+    text-shadow: 2px 2px 10px aquamarine, -2px -2px 10px aquamarine;
+  }
+  to {
+    text-shadow: 0 0 20px #bd44ff, 1px 1px 20px #bd44ff, 2px 2px 20px #bd44ff,
+      -1px -1px 20px #bd44ff, -2px -2px 20px #bd44ff;
+  }
+}
+
+@media (min-width: 1000px) {
+  .back-link {
+    font-size: 24px;
+  }
+}
+
+/* ========================= */
+
+h1 {
+  font-weight: 900;
+  font-size: 3em;
+  color: white;
+  text-shadow: 1px 1px 0.2em teal, 0 0 0.2em aquamarine, 0 0 0.2em #60c1e5;
+}
+
+p {
+  margin: 0;
+}
+.question {
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  text-shadow: 1px 1px 0.2em teal, 0 0 0.2em aquamarine, 0 0 0.2em #60c1e5;
+}
+
+div.eight-ball,
+div.answer {
+  border: 1px solid transparent;
+}
+
+div.eight-ball {
+  background-color: black;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+div.answer {
+  background-color: #333;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 25%;
+}
+
+p#eight {
+  font-size: 5rem;
+  margin: 20% auto;
+  color: white;
+}
+p#answer {
+  color: white;
+  text-shadow: 1px 1px 2px teal, 0 0 1em aquamarine, 0 0 0.2em #60c1e5;
+
+  padding: 20px;
+  letter-spacing: 2px;
+}
+
+button,
+input {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: text;
+  font-size: 1.2em;
+  font-family: "Helvetica Neue", arial;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+button {
+  transition: 0.5s font-size;
+  cursor: pointer;
+  width: 150px;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px teal, 0 0 1em aquamarine, 0 0 0.2em #60c1e5;
+  text-transform: uppercase;
+}
+
+button:hover {
+  font-weight: 700;
+  background-color: teal;
+  color: white;
+}
+
+.running-string {
+  color: #242424;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-shadow: 1px 1px 0.2em teal, 0 0 0.2em aquamarine, 0 0 0.2em #60c1e5;
+
+  transition: color 0.5s ease-in-out;
+  animation-name: changeRunColor;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changeRunColor {
+  0% {
+    padding-top: 0px;
+    color: black;
+    text-shadow: transparent;
+    font-size: 16px;
+  }
+
+  50% {
+    padding-top: 5px;
+    color: teal;
+    text-shadow: white;
+    font-size: 18px;
+  }
+
+  100% {
+    padding-top: 0px;
+    color: black;
+    text-shadow: transparent;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Magic 8 Ball</title>
+    <link href="./ball-style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="btn-wrapper">
+      <div class="navigation-main-btn">
+        <a href="../index.html">
+          <p class="back-link">Back to JS App Gallery</p>
+        </a>
+      </div>
+    </div>
+    <div class="layer">
+      <h1>Magic 8 Ball</h1>
+      <p class="question">Text in your question:</p>
+      <input id="input" />
+      <div class="eight-ball">
+        <div class="answer">
+          <p id="eight">8</p>
+          <p id="answer"></p>
+        </div>
+      </div>
+      <button id="button">Shake</button>
+
+      <p>
+        <marquee class="running-string" direction="left" behavior="scroll">
+          <span>TRY YOUR FORTUNE! 🤩</span>
+        </marquee>
+      </p>
+    </div>
+    <script src="./ball-script.js"></script>
+  </body>
+</html>
